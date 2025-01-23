@@ -1,6 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+
 body {
+    font-family: monospace, Arial, Helvetica, sans-serif;
     padding: 0;
     margin: 0;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game-title {
+    font-family: 'Pixelify Sans';
+    font-size: 48px;
+    padding: 20px;
+}
+
+.new-grid-button {
+    display: block;
+    height: 25px;
 }
 
 .grid-container {

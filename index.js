@@ -20,5 +20,25 @@ function squareHover(square) {
     square.classList.add('square-colored');
 }
 
+function newGrid() {
+    let newNumber = Math.floor(parseInt(prompt('Choose the number of squares per side from 1 to 100:')));
+    if (newNumber > 100) {
+        return alert('ERROR: Number is too large! Please input a number less than or equal to 100');
+    } else if (newNumber < 1) {
+        return alert('ERROR: Number is too small! Please input a number minimum of 1!');
+    } else if (!newNumber) {
+        return alert('ERROR: Please type in a valid number and not a string!');
+    }
+    
+    // removes every square inside of grid container
+    gridContainer.replaceChildren();
+    createGrid(newNumber);
+}
+
 const gridContainer = document.querySelector('.grid-container');
+const newGridButton = document.querySelector('.new-grid-button');
+
+newGridButton.addEventListener('click', (event) => {
+    newGrid();
+});
 createGrid(16);
