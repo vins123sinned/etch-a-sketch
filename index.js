@@ -16,14 +16,6 @@ function createGrid(number) {
     }
 }
 
-function squareHover(square) {
-    square.style.backgroundColor = `rgb(${randomRGBValue()}, ${randomRGBValue()}, ${randomRGBValue()})`;
-}
-
-function randomRGBValue() {
-    return Math.floor(Math.random() * 256);
-}
-
 function newGrid() {
     let newNumber = Math.floor(parseInt(prompt('Choose the number of squares per side from 1 to 100:')));
     if (newNumber > 100) {
@@ -39,10 +31,24 @@ function newGrid() {
     createGrid(newNumber);
 }
 
+function squareHover(square) {
+    let currentOpacity = parseFloat(window.getComputedStyle(square).getPropertyValue('opacity'));
+    square.style.backgroundColor = `rgb(${randomRGBValue()}, ${randomRGBValue()}, ${randomRGBValue()})`;
+
+    if (currentOpacity < 1) {
+        square.style.opacity = `${currentOpacity += 0.1}`;
+    }
+}
+
+function randomRGBValue() {
+    return Math.floor(Math.random() * 256);
+}
+
 const gridContainer = document.querySelector('.grid-container');
 const newGridButton = document.querySelector('.new-grid-button');
 
 newGridButton.addEventListener('click', (event) => {
     newGrid();
 });
+
 createGrid(16);

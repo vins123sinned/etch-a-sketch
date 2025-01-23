@@ -41,8 +41,5 @@ body {
 .square {
     flex: 1;
     display: block;
-}
-
-.square-colored {
-    background-color: #000000;
+    opacity: 0;
 }
