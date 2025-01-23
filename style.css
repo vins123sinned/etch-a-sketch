@@ -21,6 +21,7 @@ body {
 .new-grid-button {
     display: block;
     height: 25px;
+    margin: 0 30px 0 auto;
 }
 
 .grid-container {
@@ -28,6 +29,7 @@ body {
     height: 70vw;
     border: 1px solid black;
     display: flex;
+    margin: 25px auto 0 auto;
 }
 
 .square-container {
