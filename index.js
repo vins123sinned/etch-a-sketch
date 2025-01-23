@@ -6,10 +6,18 @@ function createGrid(number) {
             const square = document.createElement('div');
             square.classList.toggle('square');
 
+            square.addEventListener('mouseover', (event) => {
+                squareHover(square);
+            });
+
             squareContainer.appendChild(square);
         }
         gridContainer.appendChild(squareContainer);
     }
+}
+
+function squareHover(square) {
+    square.classList.add('square-colored');
 }
 
 const gridContainer = document.querySelector('.grid-container');

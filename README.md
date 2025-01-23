@@ -13,3 +13,8 @@ For each number
   Create a container for the squares in a row
   Create number amount of squares in a column
   Add mouseOver event listener which will invoke the squareHovered function
+Append to grid container
+
+squareHover pseudocode when mouseover on square:
+Add square-colored class to square
+

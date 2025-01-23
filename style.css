@@ -6,6 +6,7 @@ body {
 .grid-container {
     width: 70vw;
     height: 70vw;
+    border: 1px solid black;
     display: flex;
 }
 
@@ -17,7 +18,9 @@ body {
 
 .square {
     flex: 1;
-    background-color: bisque;
-    border: 1px solid black;
     display: block;
+}
+
+.square-colored {
+    background-color: #000000;
 }
