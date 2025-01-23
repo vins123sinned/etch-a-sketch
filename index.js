@@ -17,7 +17,11 @@ function createGrid(number) {
 }
 
 function squareHover(square) {
-    square.classList.add('square-colored');
+    square.style.backgroundColor = `rgb(${randomRGBValue()}, ${randomRGBValue()}, ${randomRGBValue()})`;
+}
+
+function randomRGBValue() {
+    return Math.floor(Math.random() * 256);
 }
 
 function newGrid() {
