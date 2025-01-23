@@ -1,0 +1,23 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.grid-container {
+    width: 70vw;
+    height: 70vw;
+    display: flex;
+}
+
+.square-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.square {
+    flex: 1;
+    background-color: bisque;
+    border: 1px solid black;
+    display: block;
+}

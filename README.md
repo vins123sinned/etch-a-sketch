@@ -6,3 +6,10 @@ This project mainly focuses on Document Object Model (DOM) manipulation which I 
 When the grid is created, each individual square will have a mouseover event listener that when activated leaves a pixelated trail through the grid like what happens when you move the pen around when sketching or playing around with the etch-a-sketch.
 
 By the end of the project, I will have become more comfortable with using the DOM methods and manipulation and also reinforce my knowledge of FlexBox as a powerful way to layout my page in CSS. This is also a great way to practice writing good commits and writing pseudocode which are great practices for efficiency and clean code. Doing the extra credits with git branches will also help me get familiar with branching and merging, two of the most common git commands that are used by coders and programmers today.
+
+CreateGrid pseudoCode:
+When function is called, take in number as a parameter
+For each number
+  Create a container for the squares in a row
+  Create number amount of squares in a column
+  Add mouseOver event listener which will invoke the squareHovered function
